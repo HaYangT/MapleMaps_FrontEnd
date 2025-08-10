@@ -1,24 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useState} from "react";
+import SearchBar from "./components/SearchBar";
 import './App.css';
 
 function App() {
+  const [character,setCharacter] = useState<any>(null);
+  const handleSearch = (nickname : string) => {
+    console.log("닉네임 : ", nickname);
+  }
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Maple maps</h1>
+      <SearchBar onSearch={handleSearch}/> 
     </div>
   );
 }
