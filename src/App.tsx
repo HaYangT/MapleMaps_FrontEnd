@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import SearchBar from "./components/SearchBar";
 import './App.css';
 
+
 function App() {
   const [character,setCharacter] = useState<any>(null);
   const handleSearch = (nickname : string) => {
@@ -11,8 +12,8 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Maple maps</h1>
-      <SearchBar onSearch={handleSearch}/> 
+      <h1>메이플 맵스</h1>
+      <SearchBar/> 
     </div>
   );
 }

@@ -1,8 +1,5 @@
-.App{
-  display: flexbox;
-  justify-content: center;
+.App {
   text-align: center;
-  align-items: center;
   color: blue;
   background-image: url('./img/backgroundimg.png');
   background-repeat: no-repeat;
@@ -10,9 +7,14 @@
   background-position: center;
   width: 100vw;
   height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.App > h1{
-  display: block;
+.App > h1 {
   font-size: 50px;
+  margin-bottom: 30px;
 }
